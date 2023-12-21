@@ -1,0 +1,565 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+li, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.root {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.orderBtn {
+    width: fit-content;
+    height: 61px;
+
+    position: relative;
+    z-index: 1;
+}
+
+.orderBtn button {
+    width: fit-content;
+    padding: 20px 30px;
+    background-color: #081800;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.orderBtn :before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: -10px;
+    bottom: -10px;
+    background-color: #51c815;
+    z-index: -1;
+}
+
+.mainSection {
+    display: flex;
+    width: 100%;
+}
+
+.mainSection header {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 20px;
+    width: 100%;
+    max-width: 1080px;
+    margin: 40px auto 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+}
+
+.mainSection header .logo {
+    position: relative;
+    width: 68px;
+    height: 56px;
+}
+
+.mainSection header .logo img {
+    width: 140%;
+    height: 140%;
+}
+
+.mainSection header nav ul {
+    display: flex;
+}
+
+.mainSection header nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+.mainSection header nav ul li:last-child{
+    margin: 0 20px;
+}
+
+.mainSection header nav ul li a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #101c02;
+    padding: 20px;
+}
+
+.mainSection .mainImage {
+    display: flex;
+    justify-content: center;
+    width: 46.25%;
+    height: 840px;
+    background-color: #f7ffec;
+}
+
+.mainSection .infoBlock {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 200px;
+    margin-left: 75px;
+}
+
+.mainSection .infoBlock .headTitle {
+    margin-left: -180px;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 80.4124px;
+    line-height: 130%;
+
+    color: #418a1c;
+}
+
+.mainSection .infoBlock > .title {
+    max-width: 715px;
+    margin: 0 0 15px -180px;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60.3093px;
+    line-height: 130%;
+
+    color: #081800;
+}
+
+.mainSection .infoBlock .description {
+    max-width: 600px;
+    margin: 20px auto 45px;
+
+    width: 528px;
+    height: 87px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 160%;
+
+    color: #081800;
+
+    opacity: 0.6;
+}
+
+.mainSection .infoBlock .orderNowContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainSection .infoBlock .orderNowContainer .sellInfo {
+    display: flex;
+    margin-top: 86px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mainSection .infoBlock .orderNowContainer .sellInfo .sellBlock {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+
+.mainSection .infoBlock .orderNowContainer .sellInfo .sellBlock .count {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 43px;
+
+    color: #418a1c;
+    margin-bottom: 10px;
+}
+
+.mainSection .infoBlock .orderNowContainer .sellInfo .sellBlock .title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+
+    color: #081800;
+
+    opacity: 0.7;
+}
+
+.secondSection {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 130px;
+}
+
+.secondSection .row {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1080px;
+    width: 100%;
+    margin: 65px -30px;
+
+}
+
+.secondSection .row img {
+    max-width: 100%;
+}
+
+.secondSection .row .titleBlock {
+    width: calc(50% - 60px);
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+
+    box-sizing: border-box;
+}
+
+.secondSection .row .titleBlock .title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 57px;
+    line-height: 140%;
+    /* or 80px */
+
+    color: #081800;
+    margin-bottom: 60px;
+}
+
+.secondSection .row .descriptionBlock {
+    width: calc(50% - 60px);
+    margin: 0 30px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.secondSection .row .descriptionBlock .text {
+    max-width: 100%;
+    margin: 40px 0 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 160%;
+    /* or 29px */
+    color: #081800;
+    opacity: 0.6;
+}
+
+.secondSection .row .descriptionBlock .initiativeList {
+    margin-top: 60px;
+    display: flex;
+}
+
+.secondSection .row .descriptionBlock .initiativeList ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.secondSection .row .descriptionBlock .initiativeList ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.secondSection .row .descriptionBlock .initiativeList ul li .checkBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    width: 40px;
+    height: 40px;
+
+    background: #418a1c;
+
+    margin-right: 26px;
+}
+
+.secondSection .row .descriptionBlock .initiativeList ul li .checkBlock img {
+    width: 16px;
+    height: 11px;
+}
+
+.secondSection .row .descriptionBlock .initiativeList ul li span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 160%;
+    /* or 29px */
+
+    color: #081800;
+
+    opacity: 0.6;
+}
+
+.secondSection .row .productBlock {
+    display: flex;
+
+    padding: 20px 40px;
+    margin: 24px 0;
+    background-color: #f7ffec;
+}
+
+.secondSection .row .productBlock .productImage {
+    display: flex;
+    align-items: center;
+}
+
+.secondSection .row .productBlock .productInfo {
+    margin-left: 42px;
+}
+
+.secondSection .row .productBlock .productInfo .title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 160%;
+    /* or 51px */
+
+    color: #081800;
+    margin-bottom: 15px;
+}
+
+.secondSection .row .productBlock .productInfo .description {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+
+    color: #101c02;
+
+    opacity: 0.6;
+}
+
+.secondSection .row .productBlock .productInfo .price {
+    margin-top: 22px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 160%;
+    /* or 38px */
+
+    color: #418a1c;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    position: relative;
+    background-color: #f7ffec;
+    box-sizing: border-box;
+
+    text-transform: uppercase;
+}
+
+.footer .imageBlock {
+    display: flex;
+    align-items: center;
+    margin: 0 60px;
+}
+
+.footer .imageBlock  img{
+    width: 160px;
+    height: 132px;
+}
+
+.footer .aboutUsList {
+    margin: 0px 60px;
+}
+
+.footer .aboutUsList ul li {
+    margin-bottom: 15px;
+}
+
+.footer .aboutUsList ul li a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+
+    color: #000a01;
+
+    opacity: 0.6;
+}
+
+.footer .followUs {
+    margin: 0 60px;
+    z-index: 10;
+}
+
+.footer .followUs .socialList {
+    display: flex;
+}
+
+.footer .followUs .socialList a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    margin: 6px;
+    border-radius: 50%;
+
+    background: #081800;
+
+    cursor: pointer;
+}
+
+.footer .followUs .socialList a img {
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+}
+
+.footer .blockName {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 160%;
+    /* identical to box height, or 29px */
+
+    color: #000a01;
+    margin-bottom: 15px;
+}
+
+.footer > img {
+    width: 50%;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+@media (max-width:  991.98px) {
+    .mainSection .mainImage {
+        display: none;
+    }
+
+    .mainSection .infoBlock {
+        margin: 200px 20px 0;
+    }
+
+    .mainSection .infoBlock .headTitle {
+        width: 100%;
+        margin-left: 0;
+
+        text-align: center;
+    }
+
+    .mainSection .infoBlock > .title {
+        max-width: max-content;
+        margin: 0 0 15px 0;
+
+        text-align: center;
+    }
+
+    .mainSection .infoBlock .description {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .mainSection .infoBlock .orderNowContainer {
+        flex-direction: row;
+        margin: 0 auto 60px auto;
+    }
+
+    .mainSection .infoBlock .orderNowContainer .orderBtn {
+        flex-direction: row;
+        margin: 0 60px 0 auto;
+    }
+
+    .mainSection .infoBlock .orderNowContainer .sellInfo {
+        margin: 0 0 0 auto;
+        padding-left: 20px;
+    }
+
+    .secondSection {
+        margin-top: 0;
+    }
+
+    .secondSection .row {
+        margin: 0 -30px;
+
+        flex-direction: column;
+    }
+
+    .secondSection .row .titleBlock {
+        width: calc(100% - 60px);
+        margin: 0 30px 60px;
+
+        text-align: center;
+    }
+
+    .secondSection .row .titleBlock .orderBtn {
+        margin: 0 auto;
+
+    }
+
+    .secondSection .row .descriptionBlock {
+        width: calc(100% - 60px);
+        margin: 0 30px 60px;
+
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .footer .imageBlock {
+        width: 100%;
+        margin: 0 60px 30px;
+    }
+
+    .footer .followUs {
+        width: 100%;
+        margin: 30px 60px 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .mainSection .infoBlock .orderNowContainer {
+        flex-direction: column;
+    }
+
+    .mainSection .infoBlock .orderNowContainer .orderBtn {
+        margin: 40px auto;
+    }
+
+    .mainSection .infoBlock .orderNowContainer .sellInfo {
+        width: 100%;
+        margin: 40px 0;
+
+        padding: 0;
+    }
+
+    .mainSection .infoBlock .orderNowContainer .sellInfo .sellBlock {
+        width: 100%;
+        margin-right: 0;
+
+        text-align: center;
+    }
+
+    .secondSection .row .titleBlock .title {
+        font-size: 36px;
+        white-space: normal;
+    }
+}
